@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\Controller;
+use App\Http\Controllers\CheckoutController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,8 +13,6 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-//Route::get('/', function () {
-//    return view('welcome');
-//});
-Route::get('/', [Controller::class, 'index']);
+Route::redirect('/', '/checkout');
+Route::get('/checkout', [CheckoutController::class, 'index']);
+Route::get('/checkout/confirm', [CheckoutController::class, 'confirm']);

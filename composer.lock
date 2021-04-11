@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ddeabc1ce42c24615f2fd0343a6ea0f2",
+    "content-hash": "ae7de50a5f09d7268ea8364977f25baa",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -4439,6 +4439,57 @@
             "time": "2021-03-28T09:42:18+00:00"
         },
         {
+            "name": "tendopay/tendopay-sdk-php",
+            "version": "0.9.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TendoPayPlugins/tendopay-sdk-php.git",
+                "reference": "99e44ae405e4b13eedf1800e6062bfe14ba5592d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TendoPayPlugins/tendopay-sdk-php/zipball/99e44ae405e4b13eedf1800e6062bfe14ba5592d",
+                "reference": "99e44ae405e4b13eedf1800e6062bfe14ba5592d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "TendoPay\\SDK\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sangmin Lee",
+                    "email": "sangmin@candydigital.co",
+                    "role": "Developer"
+                }
+            ],
+            "description": "TendoPay API intergration",
+            "homepage": "https://tendopay.ph/",
+            "keywords": [
+                "api",
+                "e-commerce",
+                "installment payment",
+                "tendopay"
+            ],
+            "support": {
+                "issues": "https://github.com/TendoPayPlugins/tendopay-sdk-php/issues",
+                "source": "https://github.com/TendoPayPlugins/tendopay-sdk-php/tree/0.9.1"
+            },
+            "time": "2021-04-01T14:17:50+00:00"
+        },
+        {
             "name": "tijsverkoyen/css-to-inline-styles",
             "version": "2.2.3",
             "source": {
@@ -7037,5 +7088,5 @@
         "php": "^7.3|^8.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "plugin-api-version": "2.0.0"
 }
